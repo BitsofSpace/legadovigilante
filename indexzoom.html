@@ -27,22 +27,6 @@
   <link rel="stylesheet" type="text/css" href="tooltipster-sideTip-punk.min.css"/>
 
 
-    <!-- Zoom -->
- <script src="svg-pan-zoom.js"></script>
-
-    <!-- Tooltip plugin -->
-
-  <script type="text/javascript" src="jquery-1.10.0.min.js"></script>
-  <script type="text/javascript" src="tooltipster.bundle.min.js"></script>
-
-  <script>
-    $(document).ready(function() {
-        $('.tooltip').tooltipster({
-        theme: 'tooltipster-punk',
-        contentAsHTML: true
-        });
-    });
-  </script>
 
 
 </head>
@@ -123,7 +107,7 @@
                 <div class="row">
                     <div class="col-md-12">
                   
-    <object id="demo-tiger" type="image/svg+xml" data="infografico_tight.svg">Your browser does not support SVG</object>
+    <img id="demo-tiger" src="infografico_tight.svg" alt="legado vigilante">
 
 
     <div class="controls">
@@ -243,7 +227,7 @@
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript 
+    <!-- Bootstrap Core JavaScript  -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -258,6 +242,8 @@
 
 
     <!-- Zoom -->
+
+     <script src="svg-pan-zoom.js"></script>
 
     <script>
       // Don't use window.onLoad like this in production, because it can only listen to one function.
@@ -280,6 +266,20 @@
         });
       };
     </script>
+
+
+    <!-- Tooltip plugin -->
+
+  <script type="text/javascript" src="tooltipster.bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+        $('.tooltip').tooltipster({
+        theme: 'tooltipster-punk',
+        contentAsHTML: true
+        });
+    });
+  </script>
 
 
 
